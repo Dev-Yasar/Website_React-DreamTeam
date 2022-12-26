@@ -1,0 +1,139 @@
+.ourAppBody{
+    position: relative;
+    width: 100%;
+    height:auto;
+    background-color: #ffffff;
+    opacity: 1;
+    background-image: radial-gradient(#a2a7ff 0.8px, #ffffff 0.8px);
+    background-size: 16px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.AppDesc{
+    padding: 50px;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.AppDesc h1{
+    color: #0963ff;
+    font-size: 70px;
+}
+.AppDesc p{
+    color: #000000;
+    font-size: 24px;
+}
+.AppDesc button{
+    margin-top: 30px;
+    padding: 10px 50px;
+    outline: none;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    text-transform: capitalize;
+    background-color: #045de9;
+    background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+      color: #ffffff;
+      border-radius: 10px;
+      font-size: 20px;
+}
+.AppDesc button:hover{
+    background-color: #000000;
+    background-image: none;
+    color: #ffffff;
+}
+.mobilesscr{
+    width: 100%;
+    height:570px;
+    position: relative;
+    background-color: #0963ff00;
+    display: flex;
+    justify-content: center;
+    
+}
+.mobilesscr2{
+    width: 50%;
+    height: min-content;
+    display:flex;
+    justify-content: center;
+
+}
+.appScreen1{
+    width: 220px;
+     height:min-content;
+     transform: rotate(-20deg);
+     animation: screenOne 3s infinite alternate-reverse ease-in-out;
+}
+.appScreen2{
+    margin-top: 60px;
+    width: 220px;
+    height:auto;
+    transform: rotate(-20deg);
+    margin-left: 40px;
+    animation: screenTwo 3s infinite alternate-reverse ease-in-out;
+}
+@keyframes screenOne {
+    0%   {transform:translateY(0px)}
+    100%  {transform:translateY(70px)}
+
+  }
+  @keyframes screenTwo {
+    0%   {transform:translateY(50px)}
+    100%  {transform:translateY(-40px)}
+
+  }
+
+  @media screen and (max-width: 720px){
+    .AppDesc h1{
+        font-size: 50px;
+    }
+    .AppDesc p{
+        color: #000000;
+        font-size: 18px;
+    }
+    .AppDesc button{
+        padding: 10px 30px;
+          font-size: 20px;
+    }
+  } 
+  @media screen and (max-width: 550px){
+    .AppDesc h1{
+        font-size: 30px;
+    }
+    .AppDesc p{
+        color: #000000;
+        font-size: 15px;
+    }
+    .AppDesc button{
+        padding: 10px 25px;
+          font-size: 17px;
+    }
+    .appScreen1{
+        width: 160px;
+    }
+    .appScreen2{
+        width: 160px;
+    }
+  } 
+  @media screen and (max-width: 380px){
+    .AppDesc h1{
+        font-size: 25px;
+    }
+    .AppDesc p{
+        color: #000000;
+        font-size: 10px;
+    }
+    .AppDesc button{
+        padding: 10px 20px;
+          font-size: 15px;
+    }
+    .appScreen1{
+        width: 140px;
+    }
+    .appScreen2{
+        width: 140px;
+    }
+  } 

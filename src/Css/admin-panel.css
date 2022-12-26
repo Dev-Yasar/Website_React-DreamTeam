@@ -1,0 +1,245 @@
+.adminBg{
+    position: relative;
+    background-color: #c7dbff;
+    width: 100%;
+    height: 100%;
+}
+.adminNavBar{
+position:fixed;
+ width: 23%;
+ height: 100vh;
+display:flex;
+top: 0;
+flex-direction: column;
+/* justify-content: center; */
+align-items: center;
+ background-color: #045de9;
+background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+}
+.adminAvatar{
+    width: 180px;
+    margin-top: 100px;
+}
+.adminName{
+    color: #ffffff;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    margin-top: 10px;
+    font-size: 22px;
+}
+.adminNav{
+    color: #ffffff;
+    font-size: 12px;
+    margin-top: 50px;
+    color: #ffffff;
+    text-transform: capitalize;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 200px;
+    margin-left: 40px;
+}
+.adminNavLink{
+    margin: 20px;
+    cursor: pointer;
+
+}
+.pages{
+    width: 77%;
+    height: 87.8vh;
+    float: right;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.EmptyAdmin{
+    position:absolute;
+    width: 77%;
+    height: 87.8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    color: #b8b8b8;
+}
+.EmptyAdmin h1{
+    margin-left: 100px;
+}
+.logoutbtn{
+  
+    position: fixed;
+    bottom: 30px;
+    width: 100px;
+    height: 40px;
+    left: 100px;
+    outline: none;
+    border: none;
+    background-color: #ffffff;
+    color: #0963ff;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+    transition:all 0.5s ease ;
+}
+.logoutbtn:hover{
+    border: 1px solid  #ffffff;
+    background-color:  #0963ff;
+    color: #ffffff;
+}
+/* media qurey             */
+
+@media screen and (max-width: 1000px) {
+    .logoutbtn{
+        bottom: 80px;
+    }
+    .adminNavBar{
+         width: 30%;
+        }
+        .pages{
+            width: 70%;
+            height: 87.8vh;
+            font-size: 10px;
+
+        }
+        .EmptyAdmin{
+            width: 70%;
+            height: 100vh;
+
+        }
+  }
+  @media screen and (max-width: 720px) {
+    .adminNavBar{
+       width: 300px;
+        left: -100%;
+        position: absolute;
+        z-index: 20;
+        transition: all 0.6s;
+        
+        }
+        .adminToggle{
+            position: absolute;
+            width: 100%;
+            height: 68px;
+            background-color: #ffffff;
+            font-size: 30px;
+            /* z-index: 10; */
+
+           
+
+        }
+        .adminToggle h4{
+            text-align: center;
+            padding: 15px ;
+            font-family: sans-serif;
+            text-transform: capitalize;
+        }
+        .adminmenu1{
+            top: 20px;
+            left: 30px;
+            position: absolute;
+            z-index: 21;
+            color: #ffffff;
+        }
+        .adminmenu2{
+            top: 20px;
+            left: 30px;
+            position: absolute;
+            z-index: 21;
+            color: #0963ff;
+        }
+        .adminNavBar.active{
+           left: 0;
+        } 
+        .logoutbtn{
+            position: absolute;
+            left: 80%;
+            top: 100px;
+        }
+        .pages{
+            width:100%;
+            height: 100vh;
+            font-size: 10px;
+        }
+        .pages::-webkit-scrollbar{
+           display: none;
+           
+        }
+        .EmptyAdmin{
+            width: 100%;
+            height: 100vh;
+
+        }
+        .EmptyAdmin h1{
+            margin-left: 0px;
+        }
+         /*
+        .adminAvatar{
+            width: 100px;
+            margin-top: 10px;
+            margin-left: 100px;
+        }
+        .adminName{
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            margin-left: 50px;
+        }
+        .adminNav{
+            font-size: 10px;
+            align-items: flex-end;
+            margin-right: 30px;
+            justify-content: center;
+            margin-top: 0px;
+            height: 150px;
+        }
+        .adminNavLink{
+            margin: 5px;
+         
+        
+        } */
+  }
+  @media screen and (max-width: 500px){
+    .logoutbtn{
+     left: 80%;
+        top: 15px;
+        transform: scale(0.8);
+    }
+    .adminToggle h4{
+        padding: 20px ;
+font-size: 25px;
+    }
+  }
+  @media screen and (max-width: 450px)
+  {
+    .logoutbtn{
+        left: 74%;
+
+       }
+       .adminToggle h4{
+        padding: 25px ;
+font-size: 20px;
+    }
+  }
+  @media screen and (max-width: 350px)
+  {
+    .logoutbtn{
+        left: 70%;
+
+       }
+       .adminToggle h4{
+        padding: 25px ;
+font-size: 17px;
+    }
+    .adminmenu1{
+        top: 25px;
+        left: 20px;
+    font-size: 20px;
+
+    }
+    .adminmenu2{
+        top: 25px;
+        left: 20px;
+        font-size: 20px;
+    }
+  }
+

@@ -1,0 +1,145 @@
+  .artBg{
+      width: 100%;
+      height: auto;
+      background-color: #ffffff;
+      background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+      
+      
+     
+  }
+.art-gallery{
+    /* margin-top: 100px; */
+    width: 100%;
+    height:200px;
+    background-color: #2a2a72;
+    background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    color:  #ffffff;
+    text-align: center;
+    align-items: center;
+    font-family : 'Viga', sans-serif;
+}
+.art-gallery div h1{
+    text-transform: uppercase;
+}
+.art-gallery div p{
+    font-size: 30px;
+    color: #ffe600;
+    font-family: 'Mr Dafoe', cursive;
+    letter-spacing: 6px;
+}
+.upload-parent{
+padding-top: 50px; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.fa-plus-circle{
+    font-size: 60px;
+    text-align: center;
+    color: #000000;
+    transition: all 1s;
+
+}
+.fa-plus-circle:hover{
+    color: #919191;
+    transform: rotateZ(180deg);
+}
+.img-grid{
+    width: 80%;
+    margin:  0px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+    transform: scale(.8);
+   
+}
+.img-wrap{
+    border-radius: 20px;
+    overflow: hidden;
+    height: 0;
+    padding: 50% 0;
+    position: relative;
+    opacity: 0.8;
+    transition: all 0.3s;
+}
+.img-grid img{
+min-width: 100%;
+min-height:100%;
+max-width: 100%;
+position: absolute;
+top: 0;
+left: 0;
+}
+
+
+
+.backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 21;
+}
+.backdrop img{
+    display: block;
+    max-width: 60%;
+    max-height: 80%;
+    margin: 60px auto;
+    box-shadow: 3px 5px 7px rgba(0, 0, 0, 0.5);
+    border: 3px solid white;
+}
+
+.progress-parent1{
+width: 100%;
+height: auto;
+display: flex;
+justify-content: center;
+}
+.progress-parent2{
+    
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+}
+.progress-bar{
+    background-color: #0963ff;
+    height: 5px;
+    margin-top: 20px;
+}
+@media screen and (max-width: 900px){ 
+    .img-grid{
+        margin-top: -100px;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 40px;
+
+    }
+  }
+  @media screen and (max-width: 500px){ 
+    .img-grid{
+        margin-top: -50px;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 40px;
+
+    }
+  }
+  @media screen and (max-width: 400px){ 
+    .img-grid{
+        margin-top: -50px;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 40px;
+
+    }
+    .art-gallery{
+        font-size: 20px;
+    }
+    .art-gallery div p{
+        font-size: 20px;
+    }
+  }

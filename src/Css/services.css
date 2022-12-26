@@ -1,0 +1,113 @@
+.service-page{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background-color: #0963ff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items:center;
+}
+.overley{
+    width: 100%;
+    height: 300px;
+background-image: linear-gradient(315deg, #2a2a72cc 0%, #00a0fdc9 74%);
+}
+.heading{
+    font-size: 60px;
+    position: absolute;
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    text-transform: capitalize;
+    
+}
+.explain{
+    text-transform: capitalize;
+    margin-top: 150px;
+    color: #ffffff;
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+}
+.plan-div{
+width: 100%;
+height: auto;
+display: flex;
+justify-content: space-evenly;
+flex-wrap: wrap;
+padding-bottom: 50px;
+color: #ffffff;
+font-family: 'Poppins', sans-serif;
+
+}
+.plan{
+margin: 20px 10px;
+text-align: center;
+width: 250px;
+padding: 20px;
+height: 200px;
+background-color: blue;
+border-radius: 15px;
+transition: 0.5s;
+}
+
+.plan h1{
+    font-size: 30px;
+}
+.plan ul{
+    line-height: 35px;
+    text-transform: capitalize;
+}
+.plan1{
+    background-color: #ef5734;
+    background-image: linear-gradient(315deg, #ef5734 0%, #ffcc2f 74%);
+  
+}
+.plan2{
+    background-color: #2a2a72;
+    background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+}
+.plan3{
+    background-color: #f907fc;
+    background-image: linear-gradient(315deg, #f907fc 0%, #05d6d9 74%);  
+}
+.plan4{
+    width: 250px;
+padding: 20px;
+height: auto;
+background-color: #ef5734;
+background-image: linear-gradient(315deg, #ef5734 0%, #ffcc2f 74%);
+}
+.plan:hover{
+    box-shadow:
+    0px 0px 31.3px rgba(0, 0, 0, 0.05),
+    0px 0px 41.5px rgba(0, 0, 0, 0.047),
+    0px 0px 48.1px rgba(0, 0, 0, 0.051),
+    0px 0px 79px rgba(0, 0, 0, 0.051)
+  ;
+  transform: translateY(-10px);
+}
+@media screen and (max-width: 800px) {
+    .heading{
+        font-size: 40px;
+        margin-top: 40px;
+        
+    }
+    .explain{
+        margin-top: 130px;
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .heading{
+        font-size: 35px;
+        margin-top: 30px;
+        
+    }
+    .explain{
+        margin-top: 100px;
+        font-size: 10px;
+    }
+}
